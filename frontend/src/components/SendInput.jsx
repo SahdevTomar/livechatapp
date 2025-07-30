@@ -15,7 +15,7 @@ const SendInput = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `${BASE_URL}/api/v1/message/send/${selectedUser?._id}`,
+        `${BASE_URL}/v1/message/send/${selectedUser?._id}`,
         { message },
         {
           headers: {
